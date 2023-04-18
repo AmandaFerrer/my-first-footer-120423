@@ -20,14 +20,10 @@ html {
  font-size: 16px;
 }
 
-/* body {
- width: 100vw;
-} */
-
 header {
  width: 100%;
  height: 7rem;
- padding: 0 1rem; /*clamp(1rem, 3vw + 1rem, 3rem)*/
+ padding: 0 1rem;
 
  display: flex;
  flex-flow: row wrap;
@@ -110,7 +106,6 @@ footer {
  font-size: 25px;
 }
 
-/* form */
 form {
  display: flex;
  flex-flow: column wrap;
@@ -142,7 +137,6 @@ button:hover {
  color: #f7f8f9;
  border: 2px solid #f7f8f9;
 }
-/* form */
 
 .column h5 {
  font-size: 18px;
@@ -151,7 +145,6 @@ button:hover {
  padding-bottom: 8px;
 }
 
-/* rallita abajo de los titulos */
 .column h5::after {
  content: '';
  position: absolute;
@@ -167,6 +160,10 @@ button:hover {
  list-style: none;
 }
 
+.get-in-touch__info {
+ padding: 0 0 0 5px;
+}
+
 .footer-links a {
  text-decoration: none;
  color: #f7f8f9;
@@ -176,6 +173,7 @@ button:hover {
 .input {
  display: flex;
  flex-flow: row wrap;
+ outline: none;
 }
 
 .search__bar {
@@ -192,7 +190,7 @@ button:hover {
 .search-btn {
  height: 40px;
  width: 35px;
- padding: 10px 10px 10px 8px;
+ padding: 12px 12px 12px 5px;
  border-radius: 0 7px 7px 0;
 
  cursor: pointer;
@@ -211,45 +209,42 @@ button:hover {
  align-items: center;
 }
 
-.contatc-details i {
+.contatc-details__icon {
  height: 35px;
  width: 35px;
+ padding: 7px;
  border: 2px solid #1e3864;
- color: #1e3864;
  display: flex;
  align-items: center;
  justify-content: center;
 }
 
-.contatc-details i:hover {
- color: #f7f8f9;
- background-color: #1e3864;
+.contatc-details__icon:hover {
+ filter: brightness(0) saturate(100%) invert(100%) sepia(30%) saturate(275%)
+  hue-rotate(114deg) brightness(104%) contrast(95%); /*cambiar color con el con ursor*/
 }
 
 .social-link-icons {
  display: flex;
  list-style: none;
+ gap: 9px;
 }
 
-.social-link-icons li {
- margin-right: 8px;
-}
-
-.fa-brands {
- height: 40px;
- width: 40px;
+.social-media-icon {
+ height: 35px;
+ width: 35px;
+ padding: 5px;
  border: 2px solid #1e3864;
  background-color: #1e3864;
- color: #f7f8f9;
  display: flex;
  align-items: center;
  justify-content: center;
  transition: 0.3s;
 }
 
-.fa-brands:hover {
+.social-media-icon:hover {
  background: transparent;
- color: #1e3864;
+ filter: #1e3864; /*cambiar color con el con ursor*/
 }
 
 .made__by {
